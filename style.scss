@@ -13,7 +13,7 @@ $yellow: rgb(248, 248, 54);
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 35px 100px;
+  margin: 35px 130px;
   .navlink ul {
     display: flex;
     gap: 20px;
@@ -52,6 +52,14 @@ $yellow: rgb(248, 248, 54);
     padding: 10px 20px;
     margin-top: -8px;
     border: none;
+  }
+}
+
+header {
+  margin: 20px 150px;
+  width: 40%;
+  h1 {
+    font-family: free-serif;
   }
 }
 
