@@ -50,12 +50,20 @@ body {
   border: none;
 }
 
+@font-face {
+  font-family: inter;
+  src: url(font/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "prata";
+  src: url(font/Prata-Regular.ttf);
+}
 header {
   margin: 20px 150px;
   width: 40%;
 }
 header h1 {
-  font-family: free-serif;
+  font-family: inter;
 }
 
 @media screen and (max-width: 576px) {
