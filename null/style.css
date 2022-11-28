@@ -12,7 +12,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 35px 130px;
+  margin: 35px 150px;
 }
 .navbar .navlink ul {
   display: flex;
@@ -51,7 +51,7 @@ body {
 }
 
 @font-face {
-  font-family: inter;
+  font-family: "inter";
   src: url(font/Inter-Regular.ttf);
 }
 @font-face {
@@ -59,11 +59,27 @@ body {
   src: url(font/Prata-Regular.ttf);
 }
 header {
-  margin: 20px 150px;
+  margin: 50px 150px;
   width: 40%;
 }
 header h1 {
-  font-family: inter;
+  font-family: prata;
+}
+header p {
+  font-family: sans-serif;
+}
+
+.brands {
+  display: flex;
+  margin: 30px 150px;
+}
+.brands ul {
+  display: flex;
+}
+.brands ul li {
+  list-style: none;
+  gap: 30px;
+  margin-right: 82px;
 }
 
 @media screen and (max-width: 576px) {
@@ -101,5 +117,20 @@ header h1 {
   }
   .yellow-button.active {
     display: flex;
+  }
+  header {
+    margin: 100px 30px;
+    width: 90%;
+  }
+  .brands {
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .brands ul {
+    justify-content: center;
+  }
+  .brands ul li {
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
