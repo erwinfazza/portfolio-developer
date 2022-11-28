@@ -57,7 +57,7 @@ $grey: grey;
 
 @font-face {
   font-family: "inter";
-  src: url(font/Inter-Regular.ttf);
+  src: url(font/Inter-VariableFont_slnt\wght.ttf);
 }
 @font-face {
   font-family: "prata";
@@ -71,24 +71,118 @@ header {
     font-family: prata;
   }
   p {
-    font-family: sans-serif;
+    font-family: inter;
+    margin-top: 10px;
   }
 }
 
 .brands {
   display: flex;
-  margin: 30px 150px;
+  margin: 50px 150px;
   ul {
     display: flex;
 
     li {
       list-style: none;
       gap: 30px;
-      margin-right: 82px;
+      margin-right: 80px;
     }
   }
 }
 
+// article
+
+article {
+  display: flex;
+  margin: 50px 150px;
+  .article-1,
+  .article-2 {
+    margin-right: 70px;
+    width: 100%;
+    .img-art {
+      width: 490px;
+    }
+    a {
+      text-decoration: none;
+      h1 {
+        color: white;
+        margin: 20px 0;
+        font-family: prata;
+      }
+    }
+    p {
+      color: $grey;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// article end
+
+// main
+main {
+  background-color: rgb(26, 31, 36);
+  .container {
+    margin: 50px 150px;
+
+    display: flex;
+    div {
+      margin: 60px 70px 60px 0;
+
+      h1 {
+        padding: 30px 0;
+      }
+      p {
+        padding: 30px 0 30px;
+        color: $grey;
+        font-family: inter;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+// last article
+.last-article {
+  margin: 0 150px;
+  width: 450px;
+  div {
+    p {
+      margin-top: 20px;
+    }
+    button {
+      padding: 7px 20px;
+      margin: 20px 0;
+      background-color: $yellow;
+      border: 0;
+    }
+  }
+}
+
+// footer
+footer {
+  background-color: rgb(26, 31, 36);
+  height: 3.5rem;
+
+  .bawah {
+    margin: 30px 150px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      font-family: prata;
+      margin-top: 1rem;
+    }
+    ul {
+      display: flex;
+      margin-top: 15px;
+      li {
+        list-style: none;
+        margin-left: 20px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 576px) {
   .navbar {
     margin: 20px 10px;
@@ -141,6 +235,47 @@ header {
       // flex-direction: column;
       li {
         margin-right: 10px;
+      }
+    }
+  }
+  // article
+  article {
+    flex-direction: column;
+    margin: 50px 20px;
+    .article-1,
+    .article-2 {
+      .img-art {
+        width: 450px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // main
+  main {
+    .container {
+      flex-direction: column;
+      margin: 10px;
+
+      div {
+        margin: 10px;
+        h1,
+        p {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+  //last article
+  .last-article {
+    margin: 60px 20px;
+  }
+  footer {
+    .bawah {
+      margin: 20px;
+      .social-media {
+        margin-top: -2px;
       }
     }
   }
