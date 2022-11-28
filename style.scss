@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+$yellow: rgb(248, 248, 54);
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 100px;
+  .navlink ul {
+    display: flex;
+    gap: 20px;
+    li {
+      list-style: none;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: grey;
+      }
+    }
+  }
+  .btn-top {
+    button {
+      background-color: $yellow;
+      padding: 10px 20px;
+      margin-top: -8px;
+      border: none;
+    }
+  }
+
+  .toggle-button {
+    display: none;
+    position: absolute;
+  }
+}
+
+.yellow-button {
+  display: none;
+  justify-content: center;
+  button {
+    background-color: $yellow;
+
+    padding: 10px 20px;
+    margin-top: -8px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    margin: 20px 10px;
+    flex-direction: column;
+    position: relative;
+    .navlink {
+      justify-content: center;
+      ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+      }
+      display: none;
+    }
+    .navlink.active {
+      display: flex;
+    }
+
+    .btn-top {
+      display: none;
+      margin-top: 30px;
+      align-self: center;
+    }
+
+    .toggle-button {
+      display: flex;
+      justify-self: end;
+      position: absolute;
+      right: 10px;
+    }
+  }
+  .yellow-button {
+    display: none;
+  }
+  .yellow-button.active {
+    display: flex;
+  }
+}

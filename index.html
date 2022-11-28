@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="null/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/brands.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <title>portfolio programmer</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo">Jonathan</div>
+      <div class="navlink">
+        <ul class="navlinks">
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Chats</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="btn-top">
+        <button class="top-btn">Get in touch</button>
+      </div>
+      <div class="toggle-button">
+        <img src="img/Hamburger Menu.svg" alt="menu" class="menu" />
+      </div>
+    </nav>
+    <div class="yellow-button">
+      <button>Get in touch</button>
+    </div>
+    <!-- navbar end -->
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navLink = document.getElementsByClassName("navlink")[0];
+      const yellowButton = document.getElementsByClassName("yellow-button")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+        yellowButton.classList.toggle("active");
+      });
+    </script>
+    <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/fontawesome.js"></script>
+  </body>
+</html>
