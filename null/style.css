@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +16,9 @@ body {
   justify-content: space-between;
   margin: 35px 150px;
 }
+.navbar .logo {
+  font-family: prata;
+}
 .navbar .navlink ul {
   display: flex;
   gap: 20px;
@@ -24,6 +29,7 @@ body {
 .navbar .navlink ul li a {
   color: white;
   text-decoration: none;
+  font-family: inter;
 }
 .navbar .navlink ul li a:hover {
   color: grey;
@@ -33,6 +39,7 @@ body {
   padding: 10px 20px;
   margin-top: -8px;
   border: none;
+  font-family: prata;
 }
 .navbar .toggle-button {
   display: none;
@@ -48,16 +55,9 @@ body {
   padding: 10px 20px;
   margin-top: -8px;
   border: none;
+  font-family: prata;
 }
 
-@font-face {
-  font-family: "inter";
-  src: url(font/Inter-VariableFont_slntwght.ttf);
-}
-@font-face {
-  font-family: "prata";
-  src: url(font/Prata-Regular.ttf);
-}
 header {
   margin: 50px 150px;
   width: 40%;
@@ -110,6 +110,7 @@ article .article-1 p,
 article .article-2 p {
   color: grey;
   letter-spacing: 1px;
+  font-family: inter;
 }
 
 main {
@@ -124,6 +125,7 @@ main .container div {
 }
 main .container div h1 {
   padding: 30px 0;
+  font-family: prata;
 }
 main .container div p {
   padding: 30px 0 30px;
@@ -136,14 +138,19 @@ main .container div p {
   margin: 0 150px;
   width: 450px;
 }
+.last-article div h2 {
+  font-family: prata;
+}
 .last-article div p {
   margin-top: 20px;
+  font-family: inter;
 }
 .last-article div button {
-  padding: 7px 20px;
+  padding: 10px 20px;
   margin: 20px 0;
   background-color: rgb(248, 248, 54);
   border: 0;
+  font-family: prata;
 }
 
 footer {
